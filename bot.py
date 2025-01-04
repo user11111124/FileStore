@@ -1,6 +1,6 @@
 from aiohttp import web
 from plugins import web_server
-
+import asyncio
 import pyromod.listen
 from pyrogram import Client
 from pyrogram.enums import ParseMode
@@ -71,22 +71,30 @@ class Bot(Client):
             self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/weebs_support for support")
             sys.exit()
 
+        
         self.set_parse_mode(ParseMode.HTML)
-
-        # Send a restart message to the LOG_CHANNEL
-        if LOG_CHANNEL:
-            await self.send_message(chat_id=LOG_CHANNEL, text="Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !")
-
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/weebs_support")
-        self.LOGGER(__name__).info("BOT SUCCESSFULLY DEPLOYED")
         self.username = usr_bot_me.username
+        self.LOGGER(__name__).info(f"Bot Running..! Made by @rohit_1888")   
 
-        # Web response
+        # Start Web Server
         app = web.AppRunner(await web_server())
         await app.setup()
-        bind_address = "0.0.0.0"
-        await web.TCPSite(app, bind_address, PORT).start()
+        await web.TCPSite(app, "0.0.0.0", PORT).start()
 
+
+        
     async def stop(self, *args):
         await super().stop()
         self.LOGGER(__name__).info("Bot stopped.")
+
+    def run(self):
+        """Run the bot."""
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(self.start())
+        self.LOGGER(__name__).info("Bot is now running. Thanks to @rohit_1888")
+        try:
+            loop.run_forever()
+        except KeyboardInterrupt:
+            self.LOGGER(__name__).info("Shutting down...")
+        finally:
+            loop.run_until_complete(self.stop())
