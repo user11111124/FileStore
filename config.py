@@ -39,8 +39,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/ec17880d61180d3312d6a.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://telegra.ph/file/e292b12890b8b4b9dcbd1.jpg")
 
-HELP_TXT = "<b>ᴛʜɪs ɪs ᴀɴ 𝕏ғɪʟᴇ ʙᴏᴛ ғᴏʀ @xseriesfy\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/xseriesofficial>𝕏𝕊𝕖𝕣𝕚𝕖𝕤</a></b>"
-ABOUT_TXT = "<b>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/davdxp>S0L0™</a>\n◈ ꜱᴇʀɪᴇꜱ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/xseriesfy>𝕏𝕊𝕖𝕣𝕚𝕖𝕤</a>\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/xseriesofficial>xᴏꜰꜰɪᴄɪᴀʟ</a></b>"
+HELP_TXT = "<b>ᴛʜɪs ɪs ᴀɴ 𝕏ғɪʟᴇ ʙᴏᴛ ғᴏʀ @xtveurope\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/xseriesofficial>𝕏𝕊𝕖𝕣𝕚𝕖𝕤</a></b>"
+ABOUT_TXT = "<b>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/davdxp>S0L0™</a>\n◈ ꜱᴇʀɪᴇꜱ ᴄʜᴀɴɴᴇʟ: <a href=https://t.me/xseriesfy>𝕏𝕊𝕖𝕣𝕚𝕖𝕤</a>\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/xtv_official>xᴏꜰꜰɪᴄɪᴀʟ</a></b>"
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\n ɪ ᴀᴍ 𝕏ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ ғɪʟᴇs.</b>")
 try:
     ADMINS=[]
