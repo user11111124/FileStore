@@ -25,7 +25,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "6820461647"))
 #Port
 PORT = os.environ.get("PORT", "8030")
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://munkog:6mOVQ1GqWD5P30XE@cluster245.e2vmr.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://XTV:CLLEls0jF9DbITqi@cluster0.10z7p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195')) #Log channel id ( make sure bot is admin )
